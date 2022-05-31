@@ -9,6 +9,11 @@ import os
 root = Tk()
 root.title("Simple Photo Editor")
 root.geometry("640x640")
+logo = (Image.open('/home/zhyldyzbek/Downloads/logooo.png'))
+resized = logo.resize((150,150),Image.ANTIALIAS)
+img = ImageTk.PhotoImage(resized)
+label = Label(root,image=img).place(x=450,y=0)
+root.resizable(False,False)
 
 
 # create functions
@@ -113,4 +118,5 @@ btn2.place(x=280, y=595)
 btn3 = Button(root, text="Exit", width=12, bg='black', fg='gold', font=('ariel 15 bold'), relief=GROOVE,
               command=root.destroy)
 btn3.place(x=460, y=595)
+
 root.mainloop()
