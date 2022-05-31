@@ -57,34 +57,6 @@ def contrast(event):
         canvas2.create_image(300, 210, image=img5)
         canvas2.image = img5
 
-
-def rotate_image(event):
-    global img_path, img6, img7
-    img = Image.open(img_path)
-    img.thumbnail((350, 350))
-    img7 = ImageTk.PhotoImage(img6)
-    canvas2.create_image(300, 210, image=img7)
-    canvas2.image = img7
-
-
-def flip_image(event):
-    global img_path, img8, img9
-    img = Image.open(img_path)
-    img.thumbnail((350, 350))
-    img9 = ImageTk.PhotoImage(img8)
-    canvas2.create_image(300, 210, image=img9)
-    canvas2.image = img9
-
-
-def image_border(event):
-    global img_path, img10, img11
-    img = Image.open(img_path)
-    img.thumbnail((350, 350))
-    img11 = ImageTk.PhotoImage(img10)
-    canvas2.create_image(300, 210, image=img11)
-    canvas2.image = img11
-
-
 img1 = None
 img3 = None
 img5 = None
